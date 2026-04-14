@@ -1,3 +1,8 @@
+## Version 0.13 (2026-XX-YY)
+
+- Update `crypton` version to >= 1.1.0 and replace the `memory` package with
+  the `ram` package to match `crypton` changes.
+
 ## Version 0.12 (2025-08-18)
 
 - GHC 9.6 is now the earliest supported version.

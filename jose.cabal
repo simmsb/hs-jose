@@ -1,6 +1,6 @@
 cabal-version:       2.2
 name:                jose
-version:             0.12
+version:             0.13
 synopsis:
   JSON Object Signing and Encryption (JOSE) and JSON Web Token (JWT) library
 description:
@@ -64,7 +64,7 @@ common common
     -Wredundant-strictness-flags
 
   build-depends:
-    base >= 4.18 && < 5
+    , base >= 4.18 && < 5
     , bytestring >= 0.10 && < 0.13
     , lens >= 4.16
     , mtl >= 2.2.1
@@ -99,8 +99,8 @@ library
     , base64-bytestring >= 1.2.1.0 && < 1.3
     , concise >= 0.1
     , containers >= 0.5.8
-    , crypton >= 0.31
-    , memory >= 0.7
+    , crypton >= 1.1.0
+    , ram >= 0.19
     , monad-time >= 0.4
     , template-haskell >= 2.12
     , text >= 1.1
@@ -136,7 +136,7 @@ test-suite tests
     , time
     , network-uri
     , crypton-x509
-    , pem
+    , crypton-pem
 
     , concise
     , jose
@@ -166,7 +166,7 @@ executable jose-example
     JWS
 
   build-depends:
-    aeson
+    , aeson
     , text
     , unix
     , jose
